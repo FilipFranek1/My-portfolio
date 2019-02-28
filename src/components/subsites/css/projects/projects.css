@@ -1,0 +1,67 @@
+.container {
+  position: relative;
+  top: 10px;
+  left: 70px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.project {
+  overflow: hidden;
+  position: relative;
+}
+
+.project img {
+  width: 25vw;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+}
+
+.project img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .project img {
+    width: 33vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-y: visible;
+  }
+  .container {
+    top: 70px;
+    left: 0;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .project img {
+    width: 50vw;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .project img {
+    width: 100vw;
+  }
+}
+/*# sourceMappingURL=projects.css.map */

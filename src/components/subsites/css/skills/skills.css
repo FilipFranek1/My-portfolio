@@ -1,0 +1,129 @@
+#skillsh {
+  color: #08fdb3;
+  text-align: center;
+}
+
+.skills {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills .scomment.scomment {
+  font-family: "La Belle Aurore", cursive;
+  letter-spacing: 1px !important;
+  font-size: 17px;
+  color: #3d3e3f !important;
+}
+
+.skills .languages,
+.skills .libraries {
+  -webkit-animation: flipInY 1s;
+          animation: flipInY 1s;
+  margin: 60px;
+  width: 400px;
+  padding: 10px;
+  height: 300px;
+  background: whitesmoke;
+}
+
+.skills .languages ul,
+.skills .libraries ul {
+  list-style: none;
+}
+
+.skills .languages h3,
+.skills .libraries h3 {
+  text-align: center;
+  color: black;
+  font-weight: 600;
+}
+
+.skills .languages ul,
+.skills .libraries ul {
+  color: black;
+  line-height: 40px;
+}
+
+@-webkit-keyframes flipInY {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+@keyframes flipInY {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+@media only screen and (max-width: 1005px) {
+  .skills {
+    display: block;
+  }
+  .skills .languages,
+  .skills .libraries {
+    margin: 20px auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .skills {
+    top: 70px;
+  }
+  #skillsh {
+    position: relative;
+    top: 70px;
+  }
+}
+/*# sourceMappingURL=skills.css.map */

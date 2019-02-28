@@ -1,0 +1,13 @@
+body {
+  overflow: hidden;
+}
+
+.comment,
+.abcomment {
+  font-family: "La Belle Aurore", cursive;
+  letter-spacing: 1px !important;
+  font-size: 17px;
+  color: #3d3e3f !important;
+  margin: 0;
+}
+/*# sourceMappingURL=App.css.map */
